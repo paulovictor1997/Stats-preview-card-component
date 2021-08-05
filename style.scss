@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+$background:hsl(233, 47%, 7%);
+$card:hsl(244, 38%, 16%);
+$paragraph:hsla(0, 0%, 100%, 0.75);
+$color:hsl(277, 64%, 61%);
+
+body{
+   background-color: $background;
+}
+
+.container{
+    padding: 90px 165px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    height: 400px;
+    background-color: $card;
+    border-radius: 10px;
+}
+
+.foto{
+    width: 500px;
+    height: 400px;
+    background-image: url(imagens/image-header-desktop.jpg);
+    border-radius: 0px 5px 5px 5px;
+    filter: brightness(50%) sepia(50) saturate(10) hue-rotate(245deg);
+}
+
+.titulo{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 30px 50px 20px 50px;
+    font-size: 2rem;
+}
+
+.titulo > strong{
+    color: $color;
+}
+
+.descricao{
+    color: $paragraph;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 0 40px 20px 40px;
+    line-height: 1.75;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.card{
+    line-height: 1.75;
+    padding: 20px;
+    color: white;
+}
+
+.card > p{
+    color: $paragraph;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto{
+        width: 500px;
+        height: 400px;
+    }
+
+    .conteudo{
+        width: 500px;
+        height: 600px;
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+    }
+}
