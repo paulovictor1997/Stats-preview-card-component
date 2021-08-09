@@ -40,22 +40,22 @@ body {
   max-width: 500px;
   height: 400px;
   background-color: #1b1938;
-  border-radius: 10px;
+  border-radius: 5px 0px 0px 5px;
 }
 
-.foto {
-  width: 500px;
-  height: 400px;
-  background-image: url(imagens/image-header-desktop.jpg);
-  border-radius: 0px 5px 5px 5px;
+img {
+  width: 100%;
+  border-radius: 0px 5px 0px 0px;
   -webkit-filter: brightness(50%) sepia(50) saturate(10) hue-rotate(245deg);
           filter: brightness(50%) sepia(50) saturate(10) hue-rotate(245deg);
+  width: 500px;
+  height: 400px;
 }
 
 .titulo {
   color: white;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   margin: 30px 50px 20px 50px;
   font-size: 2rem;
@@ -72,6 +72,8 @@ body {
   font-size: 15px;
   margin: 0 40px 20px 40px;
   line-height: 1.75;
+  text-align: center;
+  text-align: justify;
 }
 
 .options {
@@ -95,7 +97,7 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,6 +112,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
   .foto {
     width: 500px;
